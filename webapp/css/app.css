@@ -1,0 +1,74 @@
+pre.pre-wrap {
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+tr.clickable:hover {
+    background-color: #1779ba;
+    color: #fefefe;
+}
+
+
+#error-message {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f44336;
+    color: white;
+}
+
+#success-message {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+#add-contact-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#add-contact-form label {
+    flex: 1;
+}
+
+#add-contact-form input {
+    flex: 2;
+    margin: 0.5em;
+}
+
+#submit-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+#submit-button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#status {
+    color: green;
+}
+
+#status.error {
+    color: red;
+}
