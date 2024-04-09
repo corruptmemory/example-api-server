@@ -20,10 +20,10 @@
 # Go workspace file
 go.work
 
-example-api-service.toml
+example-api-server.toml
 *.sublime-project
 .vscode/*
-example-api-service
+example-api-server
 dist/exec/
 .idea/
 .DS_Store
