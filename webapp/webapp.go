@@ -95,7 +95,7 @@ func (w *webApp) newImageHandler() http.Handler {
 }
 
 func initFromDir(parentPath string) {
-	rawTemplates := template.Must(template.ParseFS(pages, filepath.Join(parentPath, "*.gohtml")))
+	rawTemplates := template.Must(template.ParseFS(pages, parentPath+"/*.gohtml"))
 	for _, tpl := range rawTemplates.Templates() {
 		switch strings.TrimSuffix(filepath.Base(tpl.Name()), ".gohtml") {
 		case "wrapper":
